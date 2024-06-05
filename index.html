@@ -8,8 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                             <div class="bar"></div>
                             <div class="bar"></div>
                         </label>
-                        <nav class="nav-menu">
+                        <nav id="nav-menu" class="nav-menu">
                             <ul>
                                 <li><a href="#me">Who Am I ?</a></li>
                                 <li><a href="#my-skills">My Skills</a></li>
@@ -41,6 +42,7 @@
                                 <li><a href="#about-me">About Me</a></li>
                                 <li><a href="#my-projects">My Projects</a></li>
                                 <li><a href="#my-testimonial">My Testimonial</a></li>
+                                <button id="exit"> Exit </button>
                             </ul>
                         </nav>
                     </div>
@@ -53,7 +55,8 @@
                             <li><a href="#my-projects">My Projects</a></li>
                             <li><a href="#my-testimonial">My Testimonial</a></li>
                         </ul>
-                        <button class="resume" type="submit">Resume<img src="images/icons/download.svg"></button>
+                        <button id="resume" class="resume" type="submit">Resume<img
+                                src="images/icons/download.svg"></button>
                     </nav>
                 </div>
             </div>
@@ -333,39 +336,154 @@
         <section class="section-7" id="my-testimonial">
             <div class="my-testimonial-box">
                 <p class="title-of-my-testimonial">My <span>Testimonial</span></p>
-                <div class="group-of-testimonial">
-                    <div class="testimonial-box-1">
-                        <div><img src="images/profile/p1.svg"></div>
-                        <p class="text-of-testimonial">I recently had to jump on 10+ different calls across eight
-                            different countries to find the right owner.</p>
-                        <div class="empty-line"></div>
-                        <div class="username">
-                            <h5>Evren Shah</h5>
-                        </div>
-                        <p class="the-job">Designer</p>
-                    </div>
+                <div class="group-of-testimonial swiper">
+                    <div class="group-of-testimonial-content">
+                        <div class="group-of-testimonial-wrapper swiper-wrapper">
 
-                    <div class="testimonial-box-2">
-                        <div><img src="images/profile/p2.svg"></div>
-                        <p class="text-of-testimonial">I recently had to jump on 10+ different calls across eight
-                            different countries to find the right owner.</p>
-                        <div class="empty-line"></div>
-                        <div class="username">
-                            <h5>Flora Sheen</h5>
-                        </div>
-                        <p class="the-job">Designer</p>
-                    </div>
+                            <!-- ## 1 ## -->
+                            <div class="testimonial-card swiper-slide">
+                                <div class="card-image">
+                                    <img class="avatar-user" src="images/profile/p1.svg">
+                                    <img class="quotes" src="images/profile/quotesB.svg">
+                                </div>
+                                <p class="text-of-testimonial">Text here...</p>
+                                <div class="empty-line"></div>
+                                <div class="username">
+                                    <h5>Name here</h5>
+                                </div>
+                                <p class="the-job">Job here</p>
+                            </div>
 
-                    <div class="testimonial-box-1">
-                        <div><img src="images/profile/p1.svg"></div>
-                        <p class="text-of-testimonial">I recently had to jump on 10+ different calls across eight
-                            different countries to find the right owner.</p>
-                        <div class="empty-line"></div>
-                        <div class="username">
-                            <h5>Evren Shah</h5>
+                            <!-- ## 2 ## -->
+                            <div class="testimonial-card swiper-slide">
+                                <div class="card-image">
+                                    <img class="avatar-user" src="images/profile/p1.svg">
+                                    <img class="quotes" src="images/profile/quotesB.svg">
+                                </div>
+                                <p class="text-of-testimonial">Text here...</p>
+                                <div class="empty-line"></div>
+                                <div class="username">
+                                    <h5>Name here</h5>
+                                </div>
+                                <p class="the-job">Job here</p>
+                            </div>
+
+                            <!-- ## 3 ## -->
+                            <div class="testimonial-card swiper-slide">
+                                <div class="card-image">
+                                    <img class="avatar-user" src="images/profile/p1.svg">
+                                    <img class="quotes" src="images/profile/quotesB.svg">
+                                </div>
+                                <p class="text-of-testimonial">Text here...</p>
+                                <div class="empty-line"></div>
+                                <div class="username">
+                                    <h5>Name here</h5>
+                                </div>
+                                <p class="the-job">Job here</p>
+                            </div>
+
+                            <!-- ## 4 ## -->
+                            <div class="testimonial-card swiper-slide">
+                                <div class="card-image">
+                                    <img class="avatar-user" src="images/profile/p1.svg">
+                                    <img class="quotes" src="images/profile/quotesB.svg">
+                                </div>
+                                <p class="text-of-testimonial">Text here...</p>
+                                <div class="empty-line"></div>
+                                <div class="username">
+                                    <h5>Name here</h5>
+                                </div>
+                                <p class="the-job">Job here</p>
+                            </div>
+
+                            <!-- ## 5 ## -->
+                            <div class="testimonial-card swiper-slide">
+                                <div class="card-image">
+                                    <img class="avatar-user" src="images/profile/p1.svg">
+                                    <img class="quotes" src="images/profile/quotesB.svg">
+                                </div>
+                                <p class="text-of-testimonial">Text here...</p>
+                                <div class="empty-line"></div>
+                                <div class="username">
+                                    <h5>Name here</h5>
+                                </div>
+                                <p class="the-job">Job here</p>
+                            </div>
+
+                            <!-- ## 6 ## -->
+                            <div class="testimonial-card swiper-slide">
+                                <div class="card-image">
+                                    <img class="avatar-user" src="images/profile/p1.svg">
+                                    <img class="quotes" src="images/profile/quotesB.svg">
+                                </div>
+                                <p class="text-of-testimonial">Text here...</p>
+                                <div class="empty-line"></div>
+                                <div class="username">
+                                    <h5>Name here</h5>
+                                </div>
+                                <p class="the-job">Job here</p>
+                            </div>
+
+                            <!-- ## 7 ## -->
+                            <div class="testimonial-card swiper-slide">
+                                <div class="card-image">
+                                    <img class="avatar-user" src="images/profile/p1.svg">
+                                    <img class="quotes" src="images/profile/quotesB.svg">
+                                </div>
+                                <p class="text-of-testimonial">Text here...</p>
+                                <div class="empty-line"></div>
+                                <div class="username">
+                                    <h5>Name here</h5>
+                                </div>
+                                <p class="the-job">Job here</p>
+                            </div>
+
+                            <!-- ## 8 ## -->
+                            <div class="testimonial-card swiper-slide">
+                                <div class="card-image">
+                                    <img class="avatar-user" src="images/profile/p1.svg">
+                                    <img class="quotes" src="images/profile/quotesB.svg">
+                                </div>
+                                <p class="text-of-testimonial">Text here...</p>
+                                <div class="empty-line"></div>
+                                <div class="username">
+                                    <h5>Name here</h5>
+                                </div>
+                                <p class="the-job">Job here</p>
+                            </div>
+
+                            <!-- ## 9 ## -->
+                            <div class="testimonial-card swiper-slide">
+                                <div class="card-image">
+                                    <img class="avatar-user" src="images/profile/p1.svg">
+                                    <img class="quotes" src="images/profile/quotesB.svg">
+                                </div>
+                                <p class="text-of-testimonial">Text here...</p>
+                                <div class="empty-line"></div>
+                                <div class="username">
+                                    <h5>Name here</h5>
+                                </div>
+                                <p class="the-job">Job here</p>
+                            </div>
+
+                            <!-- ## 10 ## -->
+                            <div class="testimonial-card swiper-slide">
+                                <div class="card-image">
+                                    <img class="avatar-user" src="images/profile/p1.svg">
+                                    <img class="quotes" src="images/profile/quotesB.svg">
+                                </div>
+                                <p class="text-of-testimonial">Text here...</p>
+                                <div class="empty-line"></div>
+                                <div class="username">
+                                    <h5>Name here</h5>
+                                </div>
+                                <p class="the-job">Job here</p>
+                            </div>
                         </div>
-                        <p class="the-job">Designer</p>
                     </div>
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -373,7 +491,7 @@
 
         <!-- #############################  Start Section-8  ############################# -->
         <section class="section-8">
-            <div class="registration-form">
+            <form id="registration-form" class="registration-form">
                 <div class="info-personal">
                     <div class="label-for-user">
                         <input type="text" name="username" id="name" placeholder="Your name" size="40">
@@ -388,6 +506,7 @@
                         <textarea name="help-user" id="text-box" rows="5" cols="42">How can I help?*</textarea>
                     </div>
                 </div>
+                <div id="error-message"></div>
                 <div class="group-of-scoial-media">
                     <div>
                         <button type="submit" id="submit">Get In Touch</button>
@@ -401,7 +520,7 @@
                     <button class="remove-border"><a href="https://www.kaggle.com/omarmousa" target="_blank"><img
                                 src="images/socials/kaggle-svgrepo-com.svg"></a></button>
                 </div>
-            </div>
+            </form>
             <div class="conclusion-in-section-8">
                 <p class="con-text-1">Let's <span class="outlined-text">talk</span> for Something special</p>
                 <p class="con-text-2">My mission is to push the boundaries of creativity, crafting interactive
@@ -427,7 +546,14 @@
             </div>
         </section>
         <!-- #############################  End Section-9  ############################# -->
+
     </main>
+
+
 </body>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
 
 </html>

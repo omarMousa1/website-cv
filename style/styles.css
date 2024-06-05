@@ -1,0 +1,1280 @@
+/* #############################  page system  #############################*/
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.black-page {
+    font-family: "Sora", sans-serif;
+    background-color: black;
+    margin-top: 20px;
+}
+
+.white-page {
+    font-family: "Sora", sans-serif;
+    margin: 16px 16px;
+}
+
+/* #############################  End page system  #############################*/
+
+/* #############################  media page system  #############################*/
+
+/* #############################  End media page system  #############################*/
+
+
+/* #############################  Start Section-1  #############################*/
+
+/* ######  Section system ######*/
+.section-1 {
+    font-family: "Sora",
+        sans-serif;
+    padding: 16px 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background-color: #f4f4f4f4;
+}
+
+/* ######  End Section system ######*/
+
+.section-1 .top-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-1 .top-page .left-section-from-nav {
+    display: flex;
+}
+
+.section-1 .top-page .right-section-from-nav {
+    display: flex;
+}
+
+.section-1 .top-page .left-section-from-nav .name-of-company .personal-logo {
+    font-weight: 800;
+}
+
+.section-1 .top-page .right-section-from-nav .nav-bar-menu ul li {
+    text-align: center;
+}
+
+.section-1 .top-page .right-section-from-nav .nav-bar-menu ul li a {
+    text-decoration: none;
+    color: #27272A;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.section-1 .top-page .right-section-from-nav .nav-bar-menu .resume {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Sora",
+        sans-serif;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    min-width: 155px;
+    cursor: pointer;
+}
+
+.section-1 .top-page .right-section-from-nav .nav-bar-menu .resume img {
+    margin-left: 10px;
+}
+
+/* #############################  End Section-1  #############################*/
+
+/* #############################  Start Section-2  #############################*/
+
+/* ######  Section system ######*/
+.section-2 {
+    font-family: "Sora", sans-serif;
+    padding: 60px 16px 0 16px;
+}
+
+/* ######  End Section system ######*/
+
+.section-2 .definition-box {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.section-2 .definition-box .man-check-labtop {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.section-2 .definition-box .definition-user .text-about-user {
+    margin: 32px 0;
+    color: #71717A;
+    font-size: 16px;
+    max-width: 1030px;
+    line-height: 25px;
+}
+
+.section-2 .definition-box .definition-user .outlined-text {
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+}
+
+.section-2 .definition-box .definition-user .username-and-address {
+    margin-top: 48px;
+    font-size: 28px;
+}
+
+.section-2 .definition-box .definition-user span {
+    font-weight: 1000;
+}
+
+.section-2 .definition-box .group-of-scoial-media {
+    display: flex;
+    gap: 10px;
+}
+
+.section-2 .definition-box .group-of-scoial-media .remove-border {
+    border: 4px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.section-2 .definition-box .definition-user .group-of-scoial-media button:hover {
+    filter: invert(1);
+    transition: filter 300ms ease-in;
+}
+
+/* #############################  End Section-2  #############################*/
+
+/* #############################  Start Section-3  #############################*/
+
+/* ######  Section system ######*/
+.section-3 {
+    font-family: "Sora", sans-serif;
+    padding: 0 16px;
+}
+
+/* ######  End Section system ######*/
+
+.section-3 .user-skills-box .group-of-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.section-3 .user-skills-box .group-of-skills .desktop-image {
+    display: none;
+}
+
+.section-3 .user-skills-box .group-of-skills .desktop-image div img {
+    width: 75px;
+    height: 75px;
+}
+
+.section-3 .user-skills-box .group-of-skills .desktop-image div p {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.section-3 .user-skills-box .head-of-user-skills {
+    text-align: center;
+    font-size: 28px;
+    padding: 80px 0 40px 0;
+}
+
+.section-3 .user-skills-box .head-of-user-skills span {
+    font-weight: 1000;
+}
+
+.section-3 .user-skills-box .group-of-skills *:hover {
+    /* filter: invert(1); */
+    background-color: #f0f0f0;
+    transition: filter 300ms ease-in;
+}
+
+.section-3 .user-skills-box .group-of-skills .all-skill div img {
+    width: 75px;
+    height: 75px;
+}
+
+.section-3 .user-skills-box .group-of-skills .all-skill div p {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.section-3 .user-skills-box .group-of-skills .all-skill {
+    text-align: center;
+    border: 3px solid #000000;
+    padding: 20px 24px 25px 24px;
+    border-radius: 5px;
+    width: 186px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* #############################  End Section-3  #############################*/
+
+/* #############################  Start Section-4  #############################*/
+
+/* ######  Section system ######*/
+.section-4 {
+    font-family: "Sora", sans-serif;
+    background-color: black;
+    margin-top: 20px;
+}
+
+/* ######  End Section system ######*/
+
+.section-4 .user-experience-box .head-of-user-experience {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 100px 0 40px 0;
+}
+
+.section-4 .user-experience-box .group-of-experience {
+    padding: 20px 0;
+}
+
+.section-4 .user-experience-box .head-of-user-experience span {
+    font-weight: 1000;
+    color: white;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-1-of-experience:hover {
+    background-color: #27272A;
+    transition: background-color 300ms ease-in;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-2-of-experience:hover {
+    background-color: #27272A;
+    transition: background-color 300ms ease-in;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-3-of-experience:hover {
+    background-color: #27272A;
+    transition: background-color 300ms ease-in;
+}
+
+/* ### box-1 ### */
+.section-4 .user-experience-box .group-of-experience .box-1-of-experience {
+    border: 1px solid white;
+    margin: 20px 20px 0;
+    border-radius: 10px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-1-of-experience .logo-and-experience p {
+    color: white;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-1-of-experience .date-of-experience {
+    padding-top: 10px;
+    color: #d4d4d4;
+    padding: 0 24px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-1-of-experience .info-about-experience {
+    color: #D4D4D8;
+    padding: 0 24px;
+    line-height: 25px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-1-of-experience .logo-and-experience {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-1-of-experience .logo-and-experience img {
+    margin-right: 20px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-1-of-experience .logo-and-experience .title-of-experience {
+    font-size: 20px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-1-of-experience {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+/* ### End box-1 ### */
+
+
+
+/* ### box-2 ### */
+.section-4 .user-experience-box .group-of-experience .box-2-of-experience {
+    border: 1px solid white;
+    margin: 20px 20px 0;
+    border-radius: 10px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-2-of-experience .logo-and-experience p {
+    color: white;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-2-of-experience .date-of-experience {
+    color: white;
+    padding: 0 24px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-2-of-experience .info-about-experience {
+    color: #D4D4D8;
+    padding: 0 24px;
+    line-height: 25px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-2-of-experience .logo-and-experience {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-2-of-experience .logo-and-experience img {
+    margin-right: 20px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-2-of-experience .logo-and-experience .title-of-experience {
+    font-size: 20px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-2-of-experience .date-of-experience {
+    margin: 15px 0;
+    color: #D4D4D8;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-2-of-experience {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+/* ### End box-2 ### */
+
+
+
+/* ### box-3 ### */
+.section-4 .user-experience-box .group-of-experience .box-3-of-experience {
+    border: 1px solid white;
+    margin: 20px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-3-of-experience .logo-and-experience p {
+    color: white;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-3-of-experience .date-of-experience {
+    color: white;
+    padding: 0 24px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-3-of-experience .info-about-experience {
+    color: #D4D4D8;
+    padding: 0 24px;
+    line-height: 25px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-3-of-experience .logo-and-experience {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-3-of-experience .logo-and-experience img {
+    margin-right: 20px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-3-of-experience .logo-and-experience .title-of-experience {
+    font-size: 20px;
+}
+
+.section-4 .user-experience-box .group-of-experience .box-3-of-experience .date-of-experience {
+    margin: 15px 0;
+    color: #D4D4D8;
+}
+
+/* #############################  End Section-4  #############################*/
+
+/* #############################  Start Section-5  #############################*/
+
+/* ######  Section system ######*/
+.section-5 {
+    font-family: "Sora", sans-serif;
+    padding: 60px 16px;
+}
+
+/* ######  End Section system ######*/
+
+.section-5 .about-me-box .area-text-about-me .title-of-text-about-me {
+    font-size: 28px;
+    margin: 80px 0 40px 0;
+}
+
+.section-5 .about-me-box .area-text-about-me .title-of-text-about-me span {
+    font-weight: 1000;
+}
+
+.section-5 .about-me-box .area-text-about-me .group-of-text-about-me {
+    display: flex;
+    flex-direction: column;
+    color: #71717A;
+    line-height: 27px;
+}
+
+.section-5 .about-me-box .user-show-from-windows {
+    text-align: center;
+}
+
+.section-5 .about-me-box .area-text-about-me {
+    display: flex;
+    flex-direction: column;
+}
+
+/* #############################  End Section-5  #############################*/
+
+/* #############################  Start Section-6  #############################*/
+
+/* ######  Section system ######*/
+.section-6 {
+    font-family: "Sora", sans-serif;
+    background-color: black;
+    margin-top: 20px;
+}
+
+/* ######  End Section system ######*/
+
+.section-6 .my-projects-box .title-of-my-projects span {
+    font-weight: 1000;
+    color: white;
+}
+
+.section-6 .my-projects-box .title-of-my-projects {
+    color: white;
+    font-size: 28px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.section-6 .my-projects-box {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+/* ### box-1 ### */
+.section-6 .my-projects-box .first-box .area-text-my-projects {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+.section-6 .my-projects-box .first-box .area-text-my-projects .number-of-projects {
+    font-weight: 1000;
+    padding-top: 15px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.section-6 .my-projects-box .first-box .area-text-my-projects .name-of-projects h5 {
+    font-weight: 1000;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.section-6 .my-projects-box .first-box .area-text-my-projects .description-of-projects {
+    color: #71717A;
+    padding-bottom: 25px;
+    line-height: 25px;
+}
+
+.section-6 .my-projects-box .first-box .area-text-my-projects .read-more-about-projects .button-read-more {
+    background-color: black;
+    border: 2px solid black;
+    padding: 0;
+    cursor: pointer;
+}
+
+.section-6 .my-projects-box .first-box .image-projects-1 {
+    text-align: center;
+}
+
+.section-6 .my-projects-box .first-box .area-text-my-projects p {
+    color: white;
+}
+
+/* ### End box-1 ### */
+
+/* ### box-2 ### */
+.section-6 .my-projects-box .second-box .area-text-my-projects {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 20px 16px;
+}
+
+.section-6 .my-projects-box .second-box .area-text-my-projects .number-of-projects {
+    font-weight: 1000;
+    padding-top: 15px;
+    font-size: 24px;
+}
+
+.section-6 .my-projects-box .second-box .area-text-my-projects .name-of-projects h5 {
+    font-weight: 1000;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.section-6 .my-projects-box .second-box .area-text-my-projects .description-of-projects {
+    color: #71717A;
+    padding-bottom: 25px;
+    line-height: 25px;
+}
+
+.section-6 .my-projects-box .second-box .area-text-my-projects .read-more-about-projects .button-read-more {
+    background-color: black;
+    border: 2px solid black;
+    padding: 0;
+    cursor: pointer;
+}
+
+.section-6 .my-projects-box .second-box .image-projects-2 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.section-6 .my-projects-box .second-box .area-text-my-projects p {
+    color: white;
+}
+
+/* ### End box-2 ### */
+
+/* ### box-3 ### */
+.section-6 .my-projects-box .third-box .area-text-my-projects {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+.section-6 .my-projects-box .third-box .area-text-my-projects .number-of-projects {
+    font-weight: 1000;
+    padding-top: 15px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.section-6 .my-projects-box .third-box .area-text-my-projects .name-of-projects h5 {
+    font-weight: 1000;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.section-6 .my-projects-box .third-box .area-text-my-projects .description-of-projects {
+    color: #71717A;
+    padding-bottom: 25px;
+    line-height: 25px;
+}
+
+.section-6 .my-projects-box .third-box .area-text-my-projects .read-more-about-projects .button-read-more {
+    background-color: black;
+    border: 2px solid black;
+    padding: 0;
+    cursor: pointer;
+}
+
+.section-6 .my-projects-box .third-box .image-projects-3 {
+    text-align: center;
+}
+
+.section-6 .my-projects-box .third-box .area-text-my-projects p {
+    color: white;
+}
+
+/* ### End box-3 ### */
+
+/* #############################  End Section-6  #############################*/
+
+/* #############################  Start Section-7  #############################*/
+
+/* ######  Section system ######*/
+.section-7 {
+    font-family: "Sora", sans-serif;
+    padding: 25px 16px;
+}
+
+/* ######  End Section system ######*/
+
+/* ### box - 1 ### */
+.section-7 .my-testimonial-box {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.section-7 .my-testimonial-box .title-of-my-testimonial {
+    font-size: 48px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.section-7 .my-testimonial-box .title-of-my-testimonial span {
+    font-weight: 1000;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial {
+    max-width: 1120px;
+    width: 100%;
+    /* background-color: gray; */
+    padding: 40px 0;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding: 45px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2),
+        0px 0px 10px rgba(0, 0, 0, 0.2),
+        0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card:hover {
+    background-color: #f0f0f0;
+    transition: background-color 300ms ease-in-out;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card .card-image {
+    width: 105px;
+    height: 100px;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card .card-image .quotes {
+    position: relative;
+    left: 70px;
+    bottom: 40px;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card .empty-line {
+    width: 125px;
+    height: 2px;
+    background-color: #323232;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content {
+    margin: 0 40px;
+    /* background-color: red; */
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 10px 5px;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .swiper-navBtn {
+    color: #000000;
+    transition: color 300ms ease-in;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .swiper-button-next {
+    right: 0px;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .swiper-button-prev {
+    left: 0px;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .swiper-navBtn:hover {
+    color: #71717A;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 40px;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .swiper-pagination-bullet {
+    background-color: #71717A;
+    opacity: 1;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .swiper-pagination-bullet-active {
+    background-color: #000000;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card .username h5 {
+    font-size: 20px;
+    color: #404040;
+    line-height: 25px;
+}
+
+.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card .text-of-testimonial {
+    font-size: 16px;
+    color: 404040;
+    line-height: 25px;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+/* ### End box - 1 ### */
+
+/* #############################  End Section-7  #############################*/
+
+/* #############################  Start Section-8  #############################*/
+
+/* ######  Section system ######*/
+.section-8 {
+    font-family: "Sora", sans-serif;
+    padding: 0 16px;
+}
+
+/* ######  End Section system ######*/
+
+.section-8 .registration-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.section-8 .registration-form .group-of-scoial-media {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    padding-top: 20px;
+}
+
+.section-8 .registration-form .group-of-scoial-media .remove-border {
+    border: 4px solid black;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.section-8 .registration-form .group-of-scoial-media button:hover {
+    filter: invert(1);
+    transition: filter 300ms ease-in;
+}
+
+.section-8 .registration-form .info-personal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+#name {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    padding: 15px;
+}
+
+#url {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    padding: 15px;
+}
+
+#email {
+    margin: 20px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    padding: 15px;
+}
+
+#text-box {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 13px;
+}
+
+#submit {
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    color: #ffffff;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.section-8 .conclusion-in-section-8 .con-phone {
+    font-weight: 1000;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.section-8 .conclusion-in-section-8 .con-email {
+    font-weight: 1000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.section-8 .conclusion-in-section-8 .con-email a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.section-8 .conclusion-in-section-8 .con-text-2 {
+    font-size: 16px;
+    color: #71717A;
+    margin: 10px 0;
+    line-height: 25px;
+}
+
+.section-8 .conclusion-in-section-8 .con-text-1 {
+    font-size: 28px;
+    font-weight: 1000;
+    margin-top: 20px;
+}
+
+.section-8 .conclusion-in-section-8 .con-text-1 .outlined-text {
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+}
+
+.section-8 .conclusion-in-section-8 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* #############################  End Section-8  #############################*/
+
+/* #############################  Start Section-9  #############################*/
+
+/* ######  Section system ######*/
+.scetion-9 {
+    font-family: "Sora", sans-serif;
+    background-color: black;
+    margin-top: 20px;
+}
+
+/* ######  End Section system ######*/
+
+.scetion-9 .button-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.scetion-9 .button-page .copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.scetion-9 .button-page .copyright p {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0;
+}
+
+.scetion-9 .button-page .logo-and-name-company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scetion-9 .button-page .logo-and-name-company p {
+    color: #ffffff;
+    font-weight: 1000;
+    padding: 4px;
+}
+
+/* #############################  End Section-9  #############################*/
+
+
+@media only screen and (max-width: 915px) {
+
+    .nav-bar-menu {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (max-width: 1109px) {
+    .section-7 .my-testimonial-box .group-of-testimonial .swiper-navBtn {
+        display: none;
+    }
+
+    .section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content {
+        margin: 0 10px;
+    }
+
+
+}
+
+@media only screen and (min-width: 915px) {
+    .section-1 {
+        padding: 16px 80px;
+    }
+
+    .top-page {
+        display: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .right-section-from-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-bar-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-bar-menu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: auto;
+    }
+
+    .nav-bar-menu ul li {
+        margin: 0 15px;
+    }
+
+    .nav-bar-menu .resume {
+
+        padding: 10px 20px;
+    }
+
+    /* ##### sec9 ##### */
+
+    .scetion-9 .button-page {
+        padding: 20px 100px 20px 100px;
+        display: flex;
+
+    }
+
+
+}
+
+
+@media only screen and (min-width: 850px) {
+    .section-2 {
+        padding: 60px 80px 0 80px;
+    }
+
+    .section-2 .definition-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .section-2 .definition-box .man-check-labtop img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .section-2 .definition-box .definition-user .text-about-user {
+        max-width: 750px;
+        padding-bottom: 50px;
+    }
+
+    .section-2 .definition-box .definition-user .username-and-address {
+        font-size: 48px;
+    }
+
+    .section-2 .definition-box .definition-user .group-of-scoial-media {
+        gap: 32px;
+    }
+
+    /* #### sec3 */
+    .section-3 .user-skills-box .head-of-user-skills {
+        font-size: 48px;
+    }
+
+}
+
+@media only screen and (min-width: 800px) {
+    .section-4 {
+        padding: 0 136px;
+    }
+
+    /* .section-4 .user-experience-box .group-of-experience .box-1-of-experience .logo-and-experience img {} */
+
+    .section-4 .user-experience-box .group-of-experience .box-1-of-experience .logo-and-experience {
+        display: flex;
+    }
+
+    .section-4 .user-experience-box .head-of-user-experience {
+        font-size: 48px;
+        padding-top: 80px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    /* .section-7 {
+        padding: 0 136px;
+    }
+
+    /* .section-7 .my-testimonial-box .group-of-testimonial {
+         display: flex;
+        flex-direction: row;
+    } 
+
+    .section-7 .my-testimonial-box .group-of-testimonial .testimonial-box-2 {
+        margin: 0 29px;
+    }
+
+    .section-7 .my-testimonial-box .title-of-my-testimonial {
+        font-size: 48px;
+    } */
+
+    /* ###### sec8 ####### */
+
+    .section-8 {
+        padding: 50px 112px 0 112px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #name {
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 40px;
+        padding: 15px;
+        width: 115%;
+    }
+
+    #url {
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 40px;
+        padding: 15px;
+        width: 115%;
+    }
+
+    #email {
+        margin: 20px 0;
+        border: 1px solid black;
+        border-radius: 5px;
+        height: 40px;
+        padding: 15px;
+        width: 115%;
+    }
+
+    #text-box {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 13px;
+        width: 101%;
+    }
+
+    .section-8 .registration-form .group-of-scoial-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 55px;
+    }
+
+    #submit {
+        width: 150px;
+        height: 48px;
+        color: #ffffff;
+        background-color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 1000;
+    }
+
+    .section-8 .conclusion-in-section-8 {
+        margin-left: 70px;
+    }
+
+    .section-8 .conclusion-in-section-8 .con-text-1 {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .section-5 {
+        padding: 0 80px;
+    }
+
+    .section-5 .about-me-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .section-5 .about-me-box .area-text-about-me .title-of-text-about-me {
+        font-size: 48px;
+    }
+
+    .section-6 {
+        padding: 0 112px;
+    }
+
+    /* ### box-1 ### */
+    .section-6 .my-projects-box .first-box {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    .section-6 .my-projects-box .first-box .image-projects-1 img {
+        object-fit: contain;
+        width: 530px;
+        height: 397px;
+        border-radius: 20px;
+    }
+
+    .section-6 .my-projects-box .first-box .area-text-my-projects .description-of-projects {
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+
+    .section-6 .my-projects-box .first-box .area-text-my-projects .number-of-projects {
+        margin-bottom: 15px;
+        font-size: 48px;
+    }
+
+    .section-6 .my-projects-box .first-box .area-text-my-projects .name-of-projects h5 {
+        margin: 15px 0;
+        font-size: 32px;
+    }
+
+    .section-6 .my-projects-box .title-of-my-projects {
+        font-size: 48px;
+    }
+
+    /* ### End box-1 ### */
+
+    /* ### box-2 ### */
+    .section-6 .my-projects-box .second-box {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 40px;
+        padding: 40px 0;
+    }
+
+    .section-6 .my-projects-box .second-box .image-projects-2 img {
+        object-fit: cover;
+        width: 530px;
+        height: 397px;
+        border-radius: 20px;
+    }
+
+    .section-6 .my-projects-box .second-box .area-text-my-projects .description-of-projects {
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+
+    .section-6 .my-projects-box .second-box .area-text-my-projects .number-of-projects {
+        margin-bottom: 15px;
+        font-size: 48px;
+    }
+
+    .section-6 .my-projects-box .second-box .area-text-my-projects .name-of-projects h5 {
+        margin: 15px 0;
+        font-size: 32px;
+    }
+
+    /* ### End box-2 ### */
+
+    /* ### box-3 ### */
+    .section-6 .my-projects-box .third-box {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        padding-top: 40px;
+    }
+
+    .section-6 .my-projects-box .third-box .image-projects-3 img {
+        object-fit: cover;
+        width: 530px;
+        height: 397px;
+        border-radius: 20px;
+    }
+
+    .section-6 .my-projects-box .third-box .area-text-my-projects .description-of-projects {
+        font-size: 16px;
+        padding-bottom: 0;
+    }
+
+    .section-6 .my-projects-box .third-box .area-text-my-projects .number-of-projects {
+        margin-bottom: 15px;
+        font-size: 48px;
+    }
+
+    .section-6 .my-projects-box .third-box .area-text-my-projects .name-of-projects h5 {
+        margin: 15px 0;
+        font-size: 32px;
+    }
+
+    /* ### End box-3 ### */
+}
+
+
+@media only screen and (min-width: 1070px) {
+    .section-3 {
+        padding: 0 112px;
+    }
+
+    .section-3 .user-skills-box .group-of-skills {
+        gap: 30px 80px;
+    }
+
+    .section-3 .user-skills-box .group-of-skills .desktop-image {
+        display: block;
+        text-align: center;
+        border: 3px solid #000000;
+        padding: 20px 24px 25px 24px;
+        border-radius: 5px;
+        width: 186px;
+        height: 186px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
