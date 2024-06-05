@@ -107,7 +107,7 @@ function validateEmail(email) {
 function downloadResume() {
     const link = document.createElement('a');
     link.href = 'Omar Mousa CV-2.pdf';
-    link.download = 'cv-file.pdf';
+    link.download = 'CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
