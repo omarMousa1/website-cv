@@ -1,39 +1,4 @@
 
-// ################################ card slider ################################
-
-const swiper = new Swiper(".group-of-testimonial-content", {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    loop: false,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        800: {
-            slidesPerView: 2,
-        },
-        1110: {
-            slidesPerView: 3,
-        },
-    },
-});
-
-// ################################ End: card slider ################################
-
-
 // ################################ Exit nav bar ################################
 
 const exitMenu = () => {

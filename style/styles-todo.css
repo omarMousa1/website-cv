@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222831;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px 0 40px 0;
+    color: antiquewhite;
+}
+
+.box-todo {
+    width: 300px;
+    height: 350px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+}
+
+.btn {
+    cursor: pointer;
+    width: 100px;
+    margin: 10px;
+    background-color: red;
+    border-width: 3px;
+    border-radius: 5px;
+    background-image: linear-gradient(#003C43, #77B0AA);
+}
+
+.btn:hover {
+    background-image: linear-gradient(#003C43, #135D66);
+}
+
+.large-btn {
+    width: 80%;
+    font-size: 19px;
+    align-self: center;
+    justify-self: center;
+}
+
+.close-box-input-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.box-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 350px;
+    background-color: #E3FEF7;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.box-input-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box-input-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box-input-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.box-input-label,
+#title,
+#date,
+#description {
+    display: block;
+}
+
+.box-input-label {
+    margin-bottom: 5px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#title,
+#date,
+#description {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+#confirm-close-box-dialog {
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+.confirm-close-box-dialog-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.discard-message {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.tasks-container {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.back-home {
+    text-decoration: none;
+    color: black;
+    width: 150px;
+}

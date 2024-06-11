@@ -278,8 +278,12 @@ html {
 /* ### box-1 ### */
 .section-4 .user-experience-box .group-of-experience .box-1-of-experience {
     border: 1px solid white;
-    margin: 20px 20px 0;
+    /* margin: 20px 20px 0; */
+    /*Edit ...*/
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* padding-bottom: 20px; */
 }
 
 .section-4 .user-experience-box .group-of-experience .box-1-of-experience .logo-and-experience p {
@@ -302,7 +306,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px;
+    padding: 8px;
 }
 
 .section-4 .user-experience-box .group-of-experience .box-1-of-experience .logo-and-experience img {
@@ -313,20 +317,13 @@ html {
     font-size: 20px;
 }
 
-.section-4 .user-experience-box .group-of-experience .box-1-of-experience {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-}
-
 /* ### End box-1 ### */
-
-
 
 /* ### box-2 ### */
 .section-4 .user-experience-box .group-of-experience .box-2-of-experience {
     border: 1px solid white;
-    margin: 20px 20px 0;
+    /* margin: 20px 20px 0; */
+    margin: 15px 0;
     border-radius: 10px;
 }
 
@@ -349,7 +346,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px;
+    padding: 8px;
 }
 
 .section-4 .user-experience-box .group-of-experience .box-2-of-experience .logo-and-experience img {
@@ -368,21 +365,20 @@ html {
 .section-4 .user-experience-box .group-of-experience .box-2-of-experience {
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
 /* ### End box-2 ### */
 
-
-
 /* ### box-3 ### */
 .section-4 .user-experience-box .group-of-experience .box-3-of-experience {
     border: 1px solid white;
-    margin: 20px 20px;
+    /* margin: 20px 20px; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+    margin-bottom: 60px;
 }
 
 .section-4 .user-experience-box .group-of-experience .box-3-of-experience .logo-and-experience p {
@@ -404,7 +400,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px;
+    padding: 8px;
 }
 
 .section-4 .user-experience-box .group-of-experience .box-3-of-experience .logo-and-experience img {
@@ -646,93 +642,66 @@ html {
 }
 
 .section-7 .my-testimonial-box .group-of-testimonial {
-    max-width: 1120px;
+    max-width: 1100px;
     width: 100%;
     /* background-color: gray; */
     padding: 40px 0;
 }
 
-.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card {
+.section-7 .my-testimonial-box .group-of-testimonial .testimonial-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    padding: 45px;
+    padding: 75px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2),
         0px 0px 10px rgba(0, 0, 0, 0.2),
         0px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
-.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card:hover {
+.section-7 .my-testimonial-box .group-of-testimonial .testimonial-card:hover {
     background-color: #f0f0f0;
     transition: background-color 300ms ease-in-out;
 }
 
-.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card .card-image {
+.section-7 .my-testimonial-box .group-of-testimonial .testimonial-card .card-image {
     width: 105px;
     height: 100px;
 }
 
-.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card .card-image .quotes {
+.section-7 .my-testimonial-box .group-of-testimonial .testimonial-card .card-image .quotes {
     position: relative;
     left: 70px;
     bottom: 40px;
 }
 
-.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card .empty-line {
+.section-7 .my-testimonial-box .group-of-testimonial .testimonial-card .empty-line {
     width: 125px;
     height: 2px;
     background-color: #323232;
 }
 
-.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content {
-    margin: 0 40px;
+.section-7 .my-testimonial-box .group-of-testimonial {
+    /* margin: 0 40px; */
     /* background-color: red; */
     overflow: hidden;
     border-radius: 25px;
     padding: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
-.section-7 .my-testimonial-box .group-of-testimonial .swiper-navBtn {
-    color: #000000;
-    transition: color 300ms ease-in;
-}
-
-.section-7 .my-testimonial-box .group-of-testimonial .swiper-button-next {
-    right: 0px;
-}
-
-.section-7 .my-testimonial-box .group-of-testimonial .swiper-button-prev {
-    left: 0px;
-}
-
-.section-7 .my-testimonial-box .group-of-testimonial .swiper-navBtn:hover {
-    color: #71717A;
-}
-
-.section-7 .my-testimonial-box .group-of-testimonial .swiper-navBtn::before,
-.swiper-navBtn::after {
-    font-size: 40px;
-}
-
-.section-7 .my-testimonial-box .group-of-testimonial .swiper-pagination-bullet {
-    background-color: #71717A;
-    opacity: 1;
-}
-
-.section-7 .my-testimonial-box .group-of-testimonial .swiper-pagination-bullet-active {
-    background-color: #000000;
-}
-
-.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card .username h5 {
+.section-7 .my-testimonial-box .group-of-testimonial .testimonial-card .username h5 {
     font-size: 20px;
     color: #404040;
     line-height: 25px;
 }
 
-.section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content .group-of-testimonial-wrapper .testimonial-card .text-of-testimonial {
+.section-7 .my-testimonial-box .group-of-testimonial .testimonial-card .text-of-testimonial {
     font-size: 16px;
     color: 404040;
     line-height: 25px;
@@ -924,17 +893,17 @@ html {
 
 }
 
-@media only screen and (max-width: 1109px) {
-    .section-7 .my-testimonial-box .group-of-testimonial .swiper-navBtn {
+/* @media only screen and (max-width: 1109px) {
+    .section-7 .my-testimonial-box .group-of-testimonial . {
         display: none;
     }
 
-    .section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial-content {
+    .section-7 .my-testimonial-box .group-of-testimonial .group-of-testimonial {
         margin: 0 10px;
     }
 
 
-}
+} */
 
 @media only screen and (min-width: 915px) {
     .section-1 {

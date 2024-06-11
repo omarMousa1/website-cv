@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style/styles-todo.css" />
+</head>
+
+<body>
+    <main>
+        <h1>TODO App</h1> <!--remove later-->
+
+        <div class="box-todo">
+            <!--button to start a new task-->
+            <button id="add-new-task-btn" class="btn large-btn">
+                Add new task
+            </button>
+
+            <!--############# start form #############-->
+            <!--form to inputs the detailes of task-->
+            <form class="box-input hidden" id="box-input">
+
+                <!--button to close the box input-->
+                <div class="box-input-header">
+                    <button id="close-box-input-btn" class="close-box-input-btn" type="button" aria-label="close">
+                        <img class="close-icon" src="images/icons/close-btn.svg">
+                    </button>
+                </div>
+
+                <!--here to inputs all the fills box-->
+                <div class="box-input-body">
+                    <label class="box-input-label" for="title">Title</label>
+                    <input type="text" class="fll-box" id="title" value="">
+                    <label class="box-input-label" for="date">Date</label>
+                    <input type="date" class="fll-box" id="date" value="">
+                    <label class="box-input-label" for="description">Description</label>
+                    <textarea class="fll-box" id="description" col="30" rows="5"></textarea>
+                </div>
+
+                <div class="box-input-footer">
+                    <button id="add-or-update-task-btn" class="btn large-btn" type="submit">Add the task</button>
+                </div>
+            </form>
+            <!--############# end form #############-->
+
+            <!--############# start dialog #############-->
+            <dialog id="confirm-close-box-dialog">
+                <form method="dialog">
+                    <p class="discard-message">Discard unsaved change?</p>
+                    <div class="confirm-close-box-dialog-btn">
+                        <button id="cancel-btn" class="btn">Cancel</button>
+                        <button id="discard-btn" class="btn">Discard</button>
+                    </div>
+                </form>
+            </dialog>
+            <!--############# end dialog #############-->
+            <div id="tasks-container"></div>
+        </div>
+        <button class="btn" type="button"><a class="back-home" href="index.html">Back to home</a></button>
+    </main>
+</body>
+<script src="js/todo.js"></script>
+
+</html>

@@ -10,7 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/menu.css">
-    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/styles-for-accordion.css">
+    <link rel="stylesheet" href="style/cards-movment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -42,6 +45,8 @@
                                 <li><a href="#about-me">About Me</a></li>
                                 <li><a href="#my-projects">My Projects</a></li>
                                 <li><a href="#my-testimonial">My Testimonial</a></li>
+                                <button id="resume" class="resume-nav" type="submit">Resume<img
+                                        src="images/icons/download.svg"></button>
                                 <button id="exit"> Exit </button>
                             </ul>
                         </nav>
@@ -54,6 +59,7 @@
                             <li><a href="#about-me">About Me</a></li>
                             <li><a href="#my-projects">My Projects</a></li>
                             <li><a href="#my-testimonial">My Testimonial</a></li>
+                            <li><a href="todoApp.html" target="_blank">TODO!</a></li>
                         </ul>
                         <button id="resume" class="resume" type="submit">Resume<img
                                 src="images/icons/download.svg"></button>
@@ -181,53 +187,80 @@
         <section class="section-4" id="my-experience">
             <div class="user-experience-box">
                 <p class="head-of-user-experience">My <span>Experience</span></p>
-                <div class="group-of-experience">
-                    <div class="box-1-of-experience">
-                        <div class="logo-and-experience">
-                            <div><img src="images/icons/coding-seo-and-web-svgrepo-com.svg"></div>
-                            <p class="title-of-experience">Graduation Project ــ Forecasting System</p>
+                <div class="group-of-experience accordion"> <!--edit-->
+                    <div class="box-1-of-experience accordion-content"> <!--edit-->
+                        <header>
+                            <div class="logo-and-experience accordion-content-title"> <!--edit-->
+                                <img src="images/icons/coding-seo-and-web-svgrepo-com.svg">
+                                <p class="title-of-experience">Graduation Project ــ Forecasting System</p>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </header>
+                        <div class="accordion-content-description">
+                            <p class="date-of-experience">N/A</p>
+                            <p class="info-about-experience">In the project we used
+                                interactive dashboards and user
+                                interface to fit and predict business KPIs using the Facebook Prophet, which is a state
+                                of
+                                the art model for modelling seasonal data and making accurate forecasts. <br> The model
+                                split the time series into a trend part and a seasonal part, the trend part is modeled
+                                with
+                                stepwise linear regression, while the seasonal part is modeled with Fourier series, the
+                                parameters pf this model is then optimized with MLE, while results in higher accuracy
+                                and
+                                faster convergence for seasonal data.</p>
                         </div>
-                        <p class="date-of-experience">N/A</p>
-                        <p class="info-about-experience">In the project we used interactive dashboards and user
-                            interface to fit and predict business KPIs using the Facebook Prophet, which is a state of
-                            the art model for modelling seasonal data and making accurate forecasts. <br> The model
-                            split the time series into a trend part and a seasonal part, the trend part is modeled with
-                            stepwise linear regression, while the seasonal part is modeled with Fourier series, the
-                            parameters pf this model is then optimized with MLE, while results in higher accuracy and
-                            faster convergence for seasonal data.</p>
                     </div>
+
                     <!--## 2 ##-->
-                    <div class="box-2-of-experience">
-                        <div class="logo-and-experience">
-                            <div><img src="images/icons/company-svgrepo-com.svg"></div>
-                            <p class="title-of-experience">Field Training – Istanbul Information Technology Company</p>
+                    <div class="box-2-of-experience accordion-content">
+                        <header>
+                            <div class="logo-and-experience accordion-content-title">
+                                <img src="images/icons/company-svgrepo-com.svg">
+                                <p class="title-of-experience">Field Training – Istanbul Information Technology Company
+                                </p>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </header>
+                        <div class="accordion-content-description">
+                            <p class="date-of-experience">June 2023 – August 2023</p>
+                            <p class="info-about-experience">Led a pivotal project creating a functional chatbot system,
+                                showcasing expertise in Python-based password encryption, API development, and server
+                                integration.<br>Proficiently used phpMyAdmin and cPanel to seamlessly integrate the
+                                chatbot onto company servers.<br>Mastered Microsoft Azure and OpenAI tools, effectively
+                                utilizing Azure for data organization and content creation.<br>Enhanced the chatbot by
+                                integrating it with Azure OpenAI, expanding its capabilities for private
+                                interactions.<br>
+                                Increased chatbot accessibility by integrating it into the Thinkprop website, boosting
+                                user
+                                engagement.</p>
                         </div>
-                        <p class="date-of-experience">June 2023 – August 2023</p>
-                        <p class="info-about-experience">Led a pivotal project creating a functional chatbot system,
-                            showcasing expertise in Python-based password encryption, API development, and server
-                            integration.<br>Proficiently used phpMyAdmin and cPanel to seamlessly integrate the
-                            chatbot onto company servers.<br>Mastered Microsoft Azure and OpenAI tools, effectively
-                            utilizing Azure for data organization and content creation.<br>Enhanced the chatbot by
-                            integrating it with Azure OpenAI, expanding its capabilities for private interactions.<br>
-                            Increased chatbot accessibility by integrating it into the Thinkprop website, boosting user
-                            engagement.</p>
                     </div>
+
                     <!--## 3 ##-->
-                    <div class="box-3-of-experience">
-                        <div class="logo-and-experience">
-                            <div><img src="images/experience/sdaia.svg"></div>
-                            <p class="title-of-experience">Training - Saudi Authority for Data and Artificial
-                                Intelligence </p>
+                    <div class="box-3-of-experience accordion-content">
+                        <header>
+                            <div class="logo-and-experience accordion-content-title">
+                                <img src="images/experience/sdaia.svg">
+                                <p class="title-of-experience">Training - Saudi Authority for Data and Artificial
+                                    Intelligence </p>
+                            </div>
+                            <i class="fa-solid fa-plus"></i>
+                        </header>
+                        <div class="accordion-content-description">
+                            <p class="date-of-experience">April 2024 - Present</p>
+                            <p class="info-about-experience">I have reached an intermediate stage of professionalism in
+                                my
+                                training, having completed coursework in web design languages HTML and CSS.<br>My
+                                proficiency
+                                has notably increased, particularly in understanding the expected design outcomes and
+                                focusing on small details before larger elements.<br>Additionally, I have incorporated
+                                JavaScript into my skill set. I have successfully designed websites in three stages and
+                                am
+                                now progressing to the next phase of my training, which involves designing websites
+                                using
+                                React.</p>
                         </div>
-                        <p class="date-of-experience">Apr 2024 - Present</p>
-                        <p class="info-about-experience">I have reached an intermediate stage of professionalism in my
-                            training, having completed coursework in web design languages HTML and CSS.<br>My
-                            proficiency
-                            has notably increased, particularly in understanding the expected design outcomes and
-                            focusing on small details before larger elements.<br>Additionally, I have incorporated
-                            JavaScript into my skill set. I have successfully designed websites in three stages and am
-                            now progressing to the next phase of my training, which involves designing websites using
-                            React.</p>
                     </div>
                 </div>
             </div>
@@ -334,157 +367,144 @@
 
         <!-- #############################  Start Section-7  ############################# -->
         <section class="section-7" id="my-testimonial">
-            <div class="my-testimonial-box">
+            <div class="my-testimonial-box wrapper">
                 <p class="title-of-my-testimonial">My <span>Testimonial</span></p>
-                <div class="group-of-testimonial swiper">
-                    <div class="group-of-testimonial-content">
-                        <div class="group-of-testimonial-wrapper swiper-wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="group-of-testimonial carousel">
 
-                            <!-- ## 1 ## -->
-                            <div class="testimonial-card swiper-slide">
-                                <div class="card-image">
-                                    <img class="avatar-user" src="images/profile/p1.svg">
-                                    <img class="quotes" src="images/profile/quotesB.svg">
-                                </div>
-                                <p class="text-of-testimonial">Text here...</p>
-                                <div class="empty-line"></div>
-                                <div class="username">
-                                    <h5>Name here</h5>
-                                </div>
-                                <p class="the-job">Job here</p>
-                            </div>
-
-                            <!-- ## 2 ## -->
-                            <div class="testimonial-card swiper-slide">
-                                <div class="card-image">
-                                    <img class="avatar-user" src="images/profile/p1.svg">
-                                    <img class="quotes" src="images/profile/quotesB.svg">
-                                </div>
-                                <p class="text-of-testimonial">Text here...</p>
-                                <div class="empty-line"></div>
-                                <div class="username">
-                                    <h5>Name here</h5>
-                                </div>
-                                <p class="the-job">Job here</p>
-                            </div>
-
-                            <!-- ## 3 ## -->
-                            <div class="testimonial-card swiper-slide">
-                                <div class="card-image">
-                                    <img class="avatar-user" src="images/profile/p1.svg">
-                                    <img class="quotes" src="images/profile/quotesB.svg">
-                                </div>
-                                <p class="text-of-testimonial">Text here...</p>
-                                <div class="empty-line"></div>
-                                <div class="username">
-                                    <h5>Name here</h5>
-                                </div>
-                                <p class="the-job">Job here</p>
-                            </div>
-
-                            <!-- ## 4 ## -->
-                            <div class="testimonial-card swiper-slide">
-                                <div class="card-image">
-                                    <img class="avatar-user" src="images/profile/p1.svg">
-                                    <img class="quotes" src="images/profile/quotesB.svg">
-                                </div>
-                                <p class="text-of-testimonial">Text here...</p>
-                                <div class="empty-line"></div>
-                                <div class="username">
-                                    <h5>Name here</h5>
-                                </div>
-                                <p class="the-job">Job here</p>
-                            </div>
-
-                            <!-- ## 5 ## -->
-                            <div class="testimonial-card swiper-slide">
-                                <div class="card-image">
-                                    <img class="avatar-user" src="images/profile/p1.svg">
-                                    <img class="quotes" src="images/profile/quotesB.svg">
-                                </div>
-                                <p class="text-of-testimonial">Text here...</p>
-                                <div class="empty-line"></div>
-                                <div class="username">
-                                    <h5>Name here</h5>
-                                </div>
-                                <p class="the-job">Job here</p>
-                            </div>
-
-                            <!-- ## 6 ## -->
-                            <div class="testimonial-card swiper-slide">
-                                <div class="card-image">
-                                    <img class="avatar-user" src="images/profile/p1.svg">
-                                    <img class="quotes" src="images/profile/quotesB.svg">
-                                </div>
-                                <p class="text-of-testimonial">Text here...</p>
-                                <div class="empty-line"></div>
-                                <div class="username">
-                                    <h5>Name here</h5>
-                                </div>
-                                <p class="the-job">Job here</p>
-                            </div>
-
-                            <!-- ## 7 ## -->
-                            <div class="testimonial-card swiper-slide">
-                                <div class="card-image">
-                                    <img class="avatar-user" src="images/profile/p1.svg">
-                                    <img class="quotes" src="images/profile/quotesB.svg">
-                                </div>
-                                <p class="text-of-testimonial">Text here...</p>
-                                <div class="empty-line"></div>
-                                <div class="username">
-                                    <h5>Name here</h5>
-                                </div>
-                                <p class="the-job">Job here</p>
-                            </div>
-
-                            <!-- ## 8 ## -->
-                            <div class="testimonial-card swiper-slide">
-                                <div class="card-image">
-                                    <img class="avatar-user" src="images/profile/p1.svg">
-                                    <img class="quotes" src="images/profile/quotesB.svg">
-                                </div>
-                                <p class="text-of-testimonial">Text here...</p>
-                                <div class="empty-line"></div>
-                                <div class="username">
-                                    <h5>Name here</h5>
-                                </div>
-                                <p class="the-job">Job here</p>
-                            </div>
-
-                            <!-- ## 9 ## -->
-                            <div class="testimonial-card swiper-slide">
-                                <div class="card-image">
-                                    <img class="avatar-user" src="images/profile/p1.svg">
-                                    <img class="quotes" src="images/profile/quotesB.svg">
-                                </div>
-                                <p class="text-of-testimonial">Text here...</p>
-                                <div class="empty-line"></div>
-                                <div class="username">
-                                    <h5>Name here</h5>
-                                </div>
-                                <p class="the-job">Job here</p>
-                            </div>
-
-                            <!-- ## 10 ## -->
-                            <div class="testimonial-card swiper-slide">
-                                <div class="card-image">
-                                    <img class="avatar-user" src="images/profile/p1.svg">
-                                    <img class="quotes" src="images/profile/quotesB.svg">
-                                </div>
-                                <p class="text-of-testimonial">Text here...</p>
-                                <div class="empty-line"></div>
-                                <div class="username">
-                                    <h5>Name here</h5>
-                                </div>
-                                <p class="the-job">Job here</p>
-                            </div>
+                    <!-- ## 1 ## -->
+                    <div class="testimonial-card card">
+                        <div class="card-image" draggable="false">
+                            <img class="avatar-user" src="images/profile/p1.svg">
+                            <img class="quotes" src="images/profile/quotesB.svg">
                         </div>
+                        <p class="text-of-testimonial">Text here...</p>
+                        <div class="empty-line"></div>
+                        <div class="username">
+                            <h5>1</h5>
+                        </div>
+                        <p class="the-job">Job here</p>
                     </div>
-                    <div class="swiper-button-next swiper-navBtn"></div>
-                    <div class="swiper-button-prev swiper-navBtn"></div>
-                    <div class="swiper-pagination"></div>
+
+                    <div class="testimonial-card card">
+                        <div class="card-image">
+                            <img class="avatar-user" src="images/profile/p1.svg">
+                            <img class="quotes" src="images/profile/quotesB.svg">
+                        </div>
+                        <p class="text-of-testimonial">Text here...</p>
+                        <div class="empty-line"></div>
+                        <div class="username">
+                            <h5>2</h5>
+                        </div>
+                        <p class="the-job">Job here</p>
+                    </div>
+
+                    <div class="testimonial-card card">
+                        <div class="card-image">
+                            <img class="avatar-user" src="images/profile/p1.svg">
+                            <img class="quotes" src="images/profile/quotesB.svg">
+                        </div>
+                        <p class="text-of-testimonial">Text here...</p>
+                        <div class="empty-line"></div>
+                        <div class="username">
+                            <h5>3</h5>
+                        </div>
+                        <p class="the-job">Job here</p>
+                    </div>
+
+                    <div class="testimonial-card card">
+                        <div class="card-image">
+                            <img class="avatar-user" src="images/profile/p1.svg">
+                            <img class="quotes" src="images/profile/quotesB.svg">
+                        </div>
+                        <p class="text-of-testimonial">Text here...</p>
+                        <div class="empty-line"></div>
+                        <div class="username">
+                            <h5>4</h5>
+                        </div>
+                        <p class="the-job">Job here</p>
+                    </div>
+
+                    <div class="testimonial-card card">
+                        <div class="card-image">
+                            <img class="avatar-user" src="images/profile/p1.svg">
+                            <img class="quotes" src="images/profile/quotesB.svg">
+                        </div>
+                        <p class="text-of-testimonial">Text here...</p>
+                        <div class="empty-line"></div>
+                        <div class="username">
+                            <h5>5</h5>
+                        </div>
+                        <p class="the-job">Job here</p>
+                    </div>
+
+                    <div class="testimonial-card card">
+                        <div class="card-image">
+                            <img class="avatar-user" src="images/profile/p1.svg">
+                            <img class="quotes" src="images/profile/quotesB.svg">
+                        </div>
+                        <p class="text-of-testimonial">Text here...</p>
+                        <div class="empty-line"></div>
+                        <div class="username">
+                            <h5>6</h5>
+                        </div>
+                        <p class="the-job">Job here</p>
+                    </div>
+
+                    <div class="testimonial-card card">
+                        <div class="card-image">
+                            <img class="avatar-user" src="images/profile/p1.svg">
+                            <img class="quotes" src="images/profile/quotesB.svg">
+                        </div>
+                        <p class="text-of-testimonial">Text here...</p>
+                        <div class="empty-line"></div>
+                        <div class="username">
+                            <h5>7</h5>
+                        </div>
+                        <p class="the-job">Job here</p>
+                    </div>
+
+                    <div class="testimonial-card card">
+                        <div class="card-image">
+                            <img class="avatar-user" src="images/profile/p1.svg">
+                            <img class="quotes" src="images/profile/quotesB.svg">
+                        </div>
+                        <p class="text-of-testimonial">Text here...</p>
+                        <div class="empty-line"></div>
+                        <div class="username">
+                            <h5>8</h5>
+                        </div>
+                        <p class="the-job">Job here</p>
+                    </div>
+
+                    <div class="testimonial-card card">
+                        <div class="card-image">
+                            <img class="avatar-user" src="images/profile/p1.svg">
+                            <img class="quotes" src="images/profile/quotesB.svg">
+                        </div>
+                        <p class="text-of-testimonial">Text here...</p>
+                        <div class="empty-line"></div>
+                        <div class="username">
+                            <h5>9</h5>
+                        </div>
+                        <p class="the-job">Job here</p>
+                    </div>
+
+                    <div class="testimonial-card card">
+                        <div class="card-image">
+                            <img class="avatar-user" src="images/profile/p1.svg">
+                            <img class="quotes" src="images/profile/quotesB.svg">
+                        </div>
+                        <p class="text-of-testimonial">Text here...</p>
+                        <div class="empty-line"></div>
+                        <div class="username">
+                            <h5>10</h5>
+                        </div>
+                        <p class="the-job">Job here</p>
+                    </div>
+
                 </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
             </div>
         </section>
         <!-- #############################  End Section-7  ############################# -->
@@ -523,8 +543,7 @@
             </form>
             <div class="conclusion-in-section-8">
                 <p class="con-text-1">Let's <span class="outlined-text">talk</span> for Something special</p>
-                <p class="con-text-2">My mission is to push the boundaries of creativity, crafting interactive
-                    experiences that are not only highly engaging but also user-friendly and unforgettable.</p>
+                <p class="con-text-2">Text here...</p>
                 <p class="con-email"><a href='omar.s.mousa194@gmail.com'>omar.s.mousa194@gmail.com</a></p>
                 <p class="con-phone">+966 58 379 4733</p>
             </div>
@@ -546,14 +565,11 @@
             </div>
         </section>
         <!-- #############################  End Section-9  ############################# -->
-
     </main>
-
-
 </body>
 
-<script src="js/swiper-bundle.min.js"></script>
+<script src="js/accordion.js"></script>
 <script src="js/script.js"></script>
-
+<script src="js/cards-movment.js"></script>
 
 </html>
